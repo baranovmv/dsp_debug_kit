@@ -18,13 +18,12 @@ def spect(s, Fs=44100):
 
 
 def pspect(s, Fs=44100):
-    plt.plot(*spect, Fs)
+    plt.plot(*spect(s, Fs))
     plt.grid(True)
     plt.show()
 
 
 def semispect(s, Fs=44100):
-    plt.semilogx(*spect, Fs)
+    plt.semilogx(*spect(s, Fs))
     plt.grid(True, "both")
     plt.show()
-    
