@@ -10,8 +10,12 @@ Thanks to both authors.
 
 ## Installation
 
-Call `./setup.sh`, it will add necessary pathes to `~/.gdbinit`.
+1. Run `git submodule init && git submodule update`.
+
+2. Call `./setup.sh`, it will add necessary pathes to `~/.gdbinit`.
 As
+
+**If you are having troubes debugging in CLion:**
 
 `gdb_numpy`` could take some time to evaluate so in clion it might be usefull to increase timeout for instructino 
 evaluation:
